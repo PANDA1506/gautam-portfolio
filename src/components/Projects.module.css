@@ -169,3 +169,32 @@
   color: var(--gold);
   border-color: var(--navy);
 }
+
+/* Show More Button */
+.showMoreWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.showMoreBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--navy);
+  font-size: 0.85rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.05em;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.showMoreBtn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(201, 168, 76, 0.05);
+}
