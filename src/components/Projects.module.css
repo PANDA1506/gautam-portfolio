@@ -4,7 +4,7 @@
 }
 
 .inner {
-  max-width: 860px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -25,8 +25,20 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
@@ -114,7 +126,7 @@
 }
 
 .detailOpen {
-  max-height: 300px;
+  max-height: 400px;
 }
 
 .bullets {
